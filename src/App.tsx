@@ -7,6 +7,7 @@ import Sidebar from './components/Sidebar';
 import MediaChecker from './views/MediaChecker';
 import AgentDiscovery from './views/AgentDiscovery';
 import FAQ from './views/FAQ';
+import History from './views/History';
 
 const App: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const App: React.FC = () => {
               <Routes>
                 <Route path="/" element={<Navigate to="/media-checker" replace />} />
                 <Route path="/media-checker" element={<MediaChecker />} />
+                <Route path="/history" element={<History />} />
                 <Route path="/agent-discovery" element={<AgentDiscovery />} />
                 <Route path="/faq" element={<FAQ />} />
                 {/* Local store: Legacy routes redirected to new MediaChecker */}
